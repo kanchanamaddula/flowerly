@@ -1,0 +1,71 @@
+Flowers
+-> you can create your own flower arrangements like:
+	1) Bouquet
+	2) Vase
+	3) Box
+	4) Unique
+	5) Basket
+	6) Sleeves
+
+	ui feature: 
+		i)   as you change the arrangement the cart icon changes to resp glyph too
+		ii)  while checkout makeup an image of the resultant flower arrangement
+		iii) select diffrent arragement types, like for example red vase, boquet with gift card etc
+		iv)  add some addons like chocolates,gift cards, gift wrapping etc
+	
+-> should have filters like types of flowers:
+	roses 
+	carnations 
+	lilies 
+	orchids
+	gerberas 
+	exotic flowers 
+	daisies 
+	others
+
+- you can make collection of arrangements
+
+-> Filters
+Price, Flower Type, Arragmenet ,Colors, also, enter a color scheme and itll generate a product for you,delivery date if pincode is given
+
+make the bg as the same color when filter by color
+
+-> Products
+	1) single flowers
+	2) premade arrangements like boquets, vases etc
+	3) premade collections of arragments
+	4) premade color theme
+	5) premade arrangements for occasions
+	6) premade arrangements for seasons
+	7) premade arrangements for mood
+
+
+CORE:
+	-> have the products listed above
+	-> ask for pincode for delivery date options
+	-> have upi/netbanking checkout available
+	-> have a <select> for currency
+	-> have auth : normal user login then Oauth2.0
+	-> have delivery charges 
+	-> have coupon codes
+	-> have sale
+	-> have rating system
+
+
+
+-> have an 8-bit cat model which shows a cute animation whenever you put something in cart!
+-> scape other flower products and add it to database
+
+colors:
+#eab595 gold-sand
+#d87f81 new-york-pink
+#ae6378 tapestry
+#79616f falcon
+#7e9680 spanish-green
+
+/ -> primary page showing products and all
+/[flower name] show products with that flower
+/[product name] show products
+/[arragment names] show arrangement names
+
+

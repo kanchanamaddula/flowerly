@@ -1,0 +1,246 @@
+body {
+    overflow-x: hidden;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg {
+    height: 100vh;
+    width: 100vw;
+
+    background-size: cover;
+
+    position: fixed;
+    top: 0px;
+    z-index: -100;
+}
+
+.bars {
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bar {
+    width: 100vw;
+}
+
+.bar2 {
+    height: 40vh;
+
+    border-left: 7vw solid black;
+    border-right: 7vw solid black;
+}
+
+.bar1,
+.bar3 {
+    background-color: black;
+    height: 30vh;
+}
+
+.bar3 {
+    height: 34vh;
+}
+
+.name {
+    font-family: "Domain Sans Display";
+    font-size: 27rem;
+    z-index: 1;
+}
+
+.bouquet {
+    margin-top: 30px;
+
+    align-self: flex-end;
+
+    width: 100vw;
+    overflow-x: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.flowerBg {
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: black;
+
+    fill: white;
+    grid-row: 1;
+    grid-column: 1;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image {
+    display: flex;
+    align-items: flex-start;
+
+    margin-left: 10vw;
+    margin-top: 10vh;
+
+    max-width: 30vw;
+
+}
+
+.bouquetPromo {
+    align-self: flex-end;
+
+    margin-left: 15%;
+    margin-top: 40%;
+
+    font-family: "Domain Text Bold";
+    font-family: "Belleza";
+    font-size: 2rem;
+    font-weight: 550;
+
+    background-color: rgb(235, 225, 225);
+    color: black;
+
+    width: max-content;
+
+    padding: 10px 45px;
+
+    border-radius: 10px;
+
+}
+
+.bouquetText {
+    font-family: "Domain Sans Display";
+    font-size: 10rem;
+    margin-left: -190px;
+
+    text-decoration: underline;
+}
+
+.bouquet-image-overlap {
+    text-decoration: underline;
+    color: black;
+}
+
+.image>img {
+    height: 70vh;
+
+}
+
+.imageContainer {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+
+.Occasions {
+    /* background-color: #DFE3E7; */
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-around;
+
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.OccasionTitle {
+    font-family: 'Domain Sans Display';
+    font-size: 6rem;
+    width: 30vw;
+    word-wrap: break-word;
+
+    align-self: flex-end;
+    font-weight: 1000;
+
+}
+
+.OccasionTitle>h1 {
+    color: black;
+}
+
+.textSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    flex-grow: 0;
+    box-sizing: border-box;
+}
+
+.bouquetsSlides {
+    display: flex;
+    align-items: center;
+}
+
+.nextButton {
+    color: black;
+    margin-bottom: 30vh;
+
+    z-index: 2;
+
+    width: 5vw;
+    height: 5vw;
+
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Domain Text Sans';
+
+    font-size: 2rem;
+
+    transform: translate(-100%, 0);
+}
+
+.every {
+    color: black;
+    text-decoration: underline;
+}
+
+.OccasionsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+}
+
+canvas {
+    z-index: -1;
+    grid-row: 1;
+    grid-column: 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bouquetsImage {
+    display: flex;
+    gap: 5vw;
+
+    overflow-x: scroll;
+    width: 25vw;
+    margin: 10vw;
+}
+
+.flowerBg>img {
+    opacity: 0.5;
+
+}
+
+.Footer{
+    
+}

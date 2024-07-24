@@ -1,0 +1,278 @@
+html {
+    overflow-x: hidden;
+}
+
+*{
+    scrollbar-width: none;
+}
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+.singleFlowerSection,
+.bouquetFlowerSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8vw;
+
+    flex-wrap: wrap;
+
+    min-width: 100vw;
+    height: 110vh;
+
+    padding-left: 30px;
+    overflow-y: scroll;
+
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+}
+
+.singleFlowerContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.bouquetFlowerSection {
+    background-color: red;
+}
+
+.container {
+
+    height: 100%;
+    width: 100%;
+
+    padding-top: 22vh;
+}
+
+.ItemCard {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    border-radius: 5px;
+    border: 1px solid white;
+
+    background-color: black;
+    height: 25vw;
+
+}
+
+
+.productImage {
+    width: 23vw;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.ItemPrice {
+    font-family: "DM Serif Text";
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.ItemName {
+    font-family: "DM Serif Display";
+    font-size: 2rem;
+}
+
+.ItemSeller {
+    font-family: "DM Serif Text";
+    font-size: larger;
+}
+
+.ItemPriceInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+}
+
+.SellerLink {
+    font-family: "Alice";
+    margin-left: 5px;
+    border-bottom: 2px solid white;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+
+    gap: 10px;
+
+    background: #ffffff10;
+    backdrop-filter: blur(30px);
+
+    width: 25vw;
+    height: 85vh;
+
+    margin-left: 10px;
+
+    border: 2px solid #ffffff50;
+    border-radius: 5px;
+    padding-left: 50px;
+
+}
+
+.hoverDiv {
+    position: fixed;
+    bottom: 50vh;
+    transform: translate(0, 50%);
+
+    padding-left: 50px;
+    z-index: 5;
+}
+
+
+.icon {
+    height: 35px;
+    filter: invert(3);
+}
+
+.fab {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    margin: 60px;
+
+    backdrop-filter: blur(30px);
+    padding: 10px;
+    background-color: #ffffff30;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid #ffffff80;
+    border-radius: 10px;
+
+    z-index: 5;
+}
+
+.disappear {
+    display: none;
+}
+
+.close,
+.apply {
+    width: 100%;
+    text-align: right;
+
+    padding: 10px;
+
+    font-family: "Oswald";
+}
+
+#min,
+#max {
+    width: 5rem;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+
+    color: black;
+
+    border-radius: 5px;
+}
+
+.Text {
+    border-bottom: 3px solid #ffffffae;
+    align-self: left;
+    width: 100%;
+}
+
+.Price,
+.FlowerType,
+.Arrangement,
+.Color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+
+    font-family: "Domain Sans Text";
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.flowersFilters,
+option {
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.apply {
+    align-self: flex-end;
+    font-size: 1.5rem;
+    margin-top: auto;
+}
+
+.filterSelection {
+    display: flex;
+    gap: 10px;
+}
+
+.appliedColors,
+.appliedFlowers {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+
+    border-radius: 10px;
+    border: 2px solid #ffffff10;
+
+}
+
+.appliedFlowers {
+    width: 12vw;
+}
+
+.colorFilter {
+    border-radius: 100%;
+
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid #ffffff80;
+
+    flex: 1 0 0;
+}
+
+.arrangement {
+    font-style: italic;
+    font-family: 'Oswald';
+    font-size: 1rem;
+    margin: 5px;
+
+    background-color: #ffffff30;
+    padding: 9px;
+    border-radius: 10px;
+    border: 3px solid #ffffff70;
+}
+
+.category {
+    padding-top: 20px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    margin-top: -15vh;
+    z-index: -1;
+
+    width: 100%;
+    font-size: 25rem;
+    color: #ffffff40;
+    font-family: 'Domain Sans Display';
+}
